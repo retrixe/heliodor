@@ -1,3 +1,6 @@
+<!-- Copyright 2025 Ibrahim Ansari -->
+<!-- SPDX-License-Identifier: Apache-2.0 -->
+
 <!-- Source: https://cssloaders.github.io/ -->
 <!-- Indeterminate only -->
 <span class="loader"></span>

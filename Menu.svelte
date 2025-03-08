@@ -1,3 +1,6 @@
+<!-- Copyright 2025 Ibrahim Ansari -->
+<!-- SPDX-License-Identifier: Apache-2.0 -->
+
 <script lang="ts">
   import type { Snippet } from 'svelte'
   import { blur } from 'svelte/transition'
