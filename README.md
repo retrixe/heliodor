@@ -41,4 +41,10 @@ the following CSS variables must be set by you:
 }
 ```
 
-you may want to include the `Baseline` SCSS file, which sets the system font stack and color scheme, applies some sanity CSS rules, makes `body` a flexbox occupying the full screen and applies the above CSS variables to text/backgrounds/links.
+you may want to include the `Baseline` SCSS file, which:
+
+- enables view transitions for multi-page applications
+- sets the system font stack and color scheme
+- applies sanity CSS rules from CssReset [inspired by Josh Comeau's CSS reset](https://www.joshwcomeau.com/css/custom-css-reset/)
+- makes `body` a flexbox occupying the full screen
+- applies the above CSS variables to text/backgrounds/links/dividers
