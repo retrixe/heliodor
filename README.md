@@ -16,3 +16,29 @@ I may publish this library in nightly versions for installation via `npm` in the
 ## documentation
 
 currently, there is none, but the components are straightforward to use.
+
+the following CSS variables must be set by you:
+
+```scss
+/* These colors are just examples using a shade of blue as the primary color */
+:root {
+  --primary-color: #0080ff;
+  --error-color: #ff0042;
+
+  --link-color: #0080ff;
+  --background-color: #f5f5f5; /* White smoke */
+  --surface-color: #fcfcfc; /* White smoke but brighter */
+  --color: #000000;
+  --divider-color: #bbb;
+
+  @media (prefers-color-scheme: dark) {
+    --link-color: #00bfff;
+    --background-color: #0e0e10; /* Jet black */
+    --surface-color: #1b1b1b; /* Eerie black */
+    --color: #ffffff;
+    --divider-color: #666;
+  }
+}
+```
+
+you may want to include the `Baseline` SCSS file, which sets the system font stack and color scheme, applies some sanity CSS rules, makes `body` a flexbox occupying the full screen and applies the above CSS variables to text/backgrounds/links.

@@ -1,0 +1,21 @@
+// Copyright 2025 Ibrahim Ansari
+// SPDX-License-Identifier: Apache-2.0
+
+// TODO: Perhaps look at more from https://www.joshwcomeau.com/css/custom-css-reset/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+input,
+select,
+button,
+textarea {
+  font: inherit;
+}
