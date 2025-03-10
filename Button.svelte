@@ -17,7 +17,7 @@
     justify-content: center;
     align-items: center;
 
-    padding: 0.6rem 1.6rem;
+    padding: 0.5rem 1.6rem;
     color: white;
     background-color: var(--primary-color);
     border: none;

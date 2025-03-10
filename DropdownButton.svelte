@@ -37,7 +37,7 @@
     }
     > :global(button:nth-child(2)) {
       border-radius: 0 0.6rem 0.6rem 0;
-      padding: 0.6rem;
+      padding: 0.5rem;
     }
   }
 </style>
