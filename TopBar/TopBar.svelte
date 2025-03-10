@@ -7,9 +7,9 @@
   const { children }: { children: Snippet } = $props()
 </script>
 
-<div class="top-bar">
+<nav class="top-bar">
   {@render children()}
-</div>
+</nav>
 
 <div class="top-bar-spacer"></div>
 
