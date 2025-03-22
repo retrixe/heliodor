@@ -1,4 +1,4 @@
-# lunaria
+# heliodor
 
 a lightweight and original UI library for Svelte
 
