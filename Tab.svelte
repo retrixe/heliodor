@@ -12,7 +12,7 @@
     active,
   }: { children: Snippet; href?: string; onclick?: () => void; active?: boolean } = $props()
 
-  const highlighted = !!active || page.url.pathname === href
+  const highlighted = $derived(!!active || page.url.pathname === href)
 </script>
 
 <a {href} {onclick} class="tab" class:highlighted>
