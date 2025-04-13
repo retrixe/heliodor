@@ -2,17 +2,19 @@
 <!-- SPDX-License-Identifier: Apache-2.0 -->
 
 <script lang="ts">
-  import { page } from '$app/state'
   import type { Snippet } from 'svelte'
 
-  const {
-    children,
-    href,
-    onclick,
-    active,
-  }: { children: Snippet; href?: string; onclick?: () => void; active?: boolean } = $props()
+  interface Props {
+    children: Snippet
+    href?: string
+    currentHref?: string | null
+    onclick?: () => void
+    active?: boolean
+  }
 
-  const highlighted = $derived(!!active || page.url.pathname === href)
+  const { children, href, currentHref, onclick, active }: Props = $props()
+
+  const highlighted = $derived(!!active || (href && currentHref && currentHref === href))
 </script>
 
 <a {href} {onclick} class="tab" class:highlighted>

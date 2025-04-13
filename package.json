@@ -1,8 +1,11 @@
 {
   "name": "heliodor",
-  "version": "0.0.3",
+  "version": "0.0.6",
   "description": "a lightweight and original UI library for Svelte",
-  "repository": "https://github.com/retrixe/heliodor",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/retrixe/heliodor.git"
+  },
   "author": "Ibrahim Ansari <ansari.ibrahim1@gmail.com>",
   "license": "Apache-2.0",
   "packageManager": "yarn@4.9.1",
@@ -11,13 +14,13 @@
     "build": "vite build && npm run prepack",
     "preview": "vite preview",
     "prepare": "husky",
-    "prepack": "svelte-kit sync && svelte-package && yarn lint:nopublint",
+    "prepack": "svelte-kit sync && svelte-package && yarn lint:prepublish",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "lint": "yarn check && eslint . && publint",
-    "lint:nopublint": "yarn check && eslint ."
+    "lint": "yarn check && eslint . && svelte-package && publint",
+    "lint:prepublish": "yarn check && eslint ."
   },
   "files": [
     "dist",
@@ -39,7 +42,6 @@
     "./CssReset.scss": "./dist/CssReset.scss"
   },
   "peerDependencies": {
-    "@sveltejs/kit": "*",
     "svelte": "^5.0.0"
   },
   "devDependencies": {

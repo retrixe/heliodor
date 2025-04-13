@@ -2449,7 +2449,6 @@ __metadata:
     typescript-eslint: "npm:^8.29.1"
     vite: "npm:^6.2.6"
   peerDependencies:
-    "@sveltejs/kit": "*"
     svelte: ^5.0.0
   languageName: unknown
   linkType: soft
