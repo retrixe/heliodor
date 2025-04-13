@@ -8,10 +8,8 @@ a lightweight and original UI library for Svelte
 
 - Option 1: Copy the components you want out of the library.\
   [Follow the Apache License 2.0 conditions.](https://en.wikipedia.org/wiki/Apache_License#Licensing_conditions)
-- Option 2: Add the repository as a git submodule.\
-  If doing so, please exempt it from your linting and formatting rules.
-
-I may publish this library in nightly versions for installation via `npm` in the future, so keep a lookout for that if you are pursuing Option 2 (since the project scaffolding will almost certainly break that setup when I do).
+- Option 2: Install nightly versions of Heliodor from npm via `npm install heliodor` and import the components you want to use.\
+  Alternatively, use `yarn add heliodor` or `pnpm add heliodor` if you prefer those package managers.
 
 ## documentation
 
@@ -41,11 +39,11 @@ the following CSS variables must be set by you:
 }
 ```
 
-you may want to include the `Baseline` SCSS file, which:
+you may want to include the `heliodor/Baseline.scss` SCSS file, which:
 
 - enables view transitions for multi-page applications
 - sets the system font stack and color scheme
-- applies sanity CSS rules from `CssReset` [inspired by Josh Comeau's CSS reset](https://www.joshwcomeau.com/css/custom-css-reset/)
+- applies sanity CSS rules from `heliodor/CssReset.scss` [inspired by Josh Comeau's CSS reset](https://www.joshwcomeau.com/css/custom-css-reset/)
 - makes `body` a flexbox occupying the full screen
 - applies the above CSS variables to text/backgrounds/links/dividers
 
