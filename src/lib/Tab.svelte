@@ -24,8 +24,8 @@
 <style lang="scss">
   .tab {
     display: block;
-    padding: 0.2rem 1rem;
-    margin: 0.6rem 0rem;
+    padding: 0.25rem 1rem;
+    margin: 0.5rem 0rem;
     text-align: center;
     color: var(--color);
     text-decoration: none;

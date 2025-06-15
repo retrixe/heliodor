@@ -16,7 +16,7 @@
 <style lang="scss">
   input {
     padding: 0.5rem 1rem;
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.5rem;
     background-color: var(--background-color);
     border: 1px solid var(--divider-color);
     border-radius: 0.5rem;

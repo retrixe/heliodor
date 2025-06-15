@@ -15,7 +15,7 @@
   .tabs {
     display: flex;
     width: 100%;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     border: 1px solid var(--divider-color);
     > :global(.tab) + :global(.tab) {
       border-left: 1px solid var(--divider-color);

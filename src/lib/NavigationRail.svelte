@@ -21,7 +21,7 @@
 <style lang="scss">
   .navigation-rail {
     padding: 1rem;
-    width: 7rem;
+    width: 8rem;
     min-height: 0;
     background-color: var(--primary-color);
     display: flex;
@@ -33,6 +33,7 @@
       flex-direction: column;
       font-weight: normal;
       padding: 0.5rem;
+      /* TODO: These gaps should probably be rendered in rem... */
       gap: 4px;
     }
   }

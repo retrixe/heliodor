@@ -39,7 +39,7 @@
 <style lang="scss">
   .menu {
     position: absolute;
-    top: calc(100% - 4px);
+    top: calc(100% - 0.25rem);
     right: 0;
     min-width: 12rem;
     z-index: 50;
@@ -47,7 +47,7 @@
     > :global(div) {
       display: flex;
       flex-direction: column;
-      padding: 4px;
+      padding: 0.25rem;
     }
   }
 

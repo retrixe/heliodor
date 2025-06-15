@@ -31,12 +31,12 @@
   .dropdown-button {
     position: relative;
     display: flex;
-    gap: 2px;
+    gap: 0.125rem;
     > :global(button:first-child) {
-      border-radius: 0.6rem 0 0 0.6rem;
+      border-radius: 0.5rem 0 0 0.5rem;
     }
     > :global(button:nth-child(2)) {
-      border-radius: 0 0.6rem 0.6rem 0;
+      border-radius: 0 0.5rem 0.5rem 0;
       padding: 0.5rem;
     }
   }

@@ -6,7 +6,7 @@
 <style lang="scss">
   .divider {
     border-left: 1px solid var(--divider-color);
-    height: 28px;
-    margin: 0px 12px;
+    height: 2rem;
+    margin: 0px 0.75rem;
   }
 </style>

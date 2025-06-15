@@ -18,10 +18,10 @@
     justify-content: flex-start;
     align-items: center;
 
-    padding: 8px;
+    padding: 0.5rem;
     background-color: inherit;
     border: none;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     cursor: pointer;
     transition: filter 0.2s ease-in-out;
     &:enabled {

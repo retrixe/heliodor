@@ -35,7 +35,7 @@
     color: var(--color);
     background-color: var(--background-color);
     padding: 0.5rem;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     box-shadow: 0 0 16px var(--primary-color);
     pointer-events: none;
     text-align: center;

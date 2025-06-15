@@ -1,6 +1,8 @@
 <!-- Copyright 2025 Ibrahim Ansari -->
 <!-- SPDX-License-Identifier: Apache-2.0 -->
 
+<!-- NOTE: This component is experimental! It will likely be merged into LinearProgress. -->
+
 <script lang="ts">
   import type { SvelteHTMLElements } from 'svelte/elements'
 
