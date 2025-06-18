@@ -13,6 +13,7 @@
     children,
   }: { open: boolean; onClose: () => void; children: Snippet } = $props()
 
+  // TODO: Move to <dialog> which removes need for scrolllock + Toast workarounds.
   const scrolllock: Action<HTMLBodyElement> = node => {
     $effect(() => {
       node.classList.toggle('scrolllock', open)
