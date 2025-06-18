@@ -3,8 +3,7 @@
 
 <script lang="ts">
   import type { Snippet } from 'svelte'
-  import type { HTMLButtonAttributes } from 'svelte/elements'
-  import Button from './Button.svelte'
+  import Button, { type Props } from './Button.svelte'
 
   const {
     primaryChild,
@@ -16,8 +15,8 @@
     primaryChild: Snippet
     secondaryChild: Snippet
     children?: Snippet
-    primary?: HTMLButtonAttributes
-    secondary?: HTMLButtonAttributes
+    primary?: Omit<Props, 'children'>
+    secondary?: Omit<Props, 'children'>
   } = $props()
 </script>
 

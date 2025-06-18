@@ -5,11 +5,14 @@
   import type { Snippet } from 'svelte'
   import type { HTMLButtonAttributes } from 'svelte/elements'
 
-  type Props = HTMLButtonAttributes & { children: Snippet }
-  const { children, ...rest }: Props = $props()
+  export type Props = HTMLButtonAttributes & {
+    children: Snippet
+    color?: 'default' | 'primary' | 'success' | 'error'
+  }
+  const { color, children, ...rest }: Props = $props()
 </script>
 
-<button {...rest}>{@render children()}</button>
+<button class={color} {...rest}>{@render children()}</button>
 
 <style lang="scss">
   button {
@@ -20,6 +23,12 @@
     padding: 0.5rem 1.5rem;
     color: white;
     background-color: var(--primary-color);
+    &.success {
+      background-color: green;
+    }
+    &.error {
+      background-color: var(--error-color);
+    }
     border: none;
     border-radius: 0.5rem;
     cursor: pointer;
