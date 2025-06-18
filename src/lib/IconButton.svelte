@@ -1,6 +1,8 @@
 <!-- Copyright 2025 Ibrahim Ansari -->
 <!-- SPDX-License-Identifier: Apache-2.0 -->
 
+<!-- Derived from Button.svelte -->
+
 <script lang="ts">
   import type { Snippet } from 'svelte'
   import type { HTMLButtonAttributes } from 'svelte/elements'
@@ -25,26 +27,35 @@
     cursor: pointer;
     font-weight: bold;
 
-    padding: 0.5rem 1.5rem;
-    color: white;
-    background-color: var(--primary-color);
+    /* Compared to Button:
+      - Different background / background-color -> color / hover brightness / padding.
+      - Added background color with transition.
+    */
+    padding: 0.25rem;
+    background: none;
+    &.primary {
+      color: var(--primary-color);
+    }
     &.success {
-      background-color: green;
+      color: green;
     }
     &.error {
-      background-color: var(--error-color);
+      color: var(--error-color);
     }
-    transition: filter 0.2s ease-in-out;
+    transition:
+      filter 0.2s ease-in-out,
+      background-color 0.2s ease-in-out;
     &:enabled {
       &:hover {
-        filter: brightness(1.2);
+        filter: brightness(0.8);
+        background-color: var(--surface-color);
       }
       &:active {
-        filter: brightness(0.8);
+        filter: brightness(0.6);
       }
     }
     &:disabled {
-      background-color: var(--divider-color);
+      color: var(--divider-color);
       cursor: not-allowed;
     }
   }
